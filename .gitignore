@@ -1,0 +1,108 @@
+# ==============================================================================
+# Node.js (Frontend & Backend)
+# ==============================================================================
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Temp & Build Output
+dist/
+build/
+.npm
+.eslintcache
+.vite/
+coverage/
+.nyc_output/
+
+# ==============================================================================
+# Python (ML-Service)
+# ==============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing / Profiling
+.pytest_cache/
+.coverage
+htmlcov/
+pytest.xml
+coverage.xml
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+
+# Databases
+*.sqlite
+*.sqlite3
+*.db
+
+# ML Models & Large Files (Use git-lfs or download via script)
+*.pkl
+*.h5
+*.pt
+*.onnx
+vosk-model-*/
+
+# ==============================================================================
+# Environment Variables & Secrets
+# ==============================================================================
+.env
+.env.production
+.env.development
+.env.local
+.env.*.local
+!.env.example
+
+# ==============================================================================
+# OS Generated Files
+# ==============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ==============================================================================
+# IDEs and Editors
+# ==============================================================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
