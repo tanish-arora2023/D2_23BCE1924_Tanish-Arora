@@ -9,6 +9,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+.env
+**/.env
+node_modules/
 # Runtime data
 pids
 *.pid

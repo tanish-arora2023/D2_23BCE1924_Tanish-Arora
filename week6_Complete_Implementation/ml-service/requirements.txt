@@ -1,0 +1,20 @@
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+pydantic==2.11.1
+pydantic-settings==2.8.1
+python-dotenv==1.1.0
+numpy==2.2.4
+pandas==2.2.3
+scikit-learn==1.8.0
+httpx==0.28.1
+pytest==8.3.4
+
+# ─── Audio Processing ───
+vosk==0.3.45
+librosa==0.10.2.post1
+soundfile==0.13.1
+pydub==0.25.1
+SpeechRecognition>=3.10.0
+python-multipart==0.0.20
+SQLAlchemy==2.0.40
+psycopg2-binary==2.9.9
