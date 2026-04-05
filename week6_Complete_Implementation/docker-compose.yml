@@ -1,0 +1,37 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: neurosense-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+  ml-service:
+    build:
+      context: ./ml-service
+      dockerfile: Dockerfile
+    container_name: neurosense-ml-service
+    restart: unless-stopped
+    env_file: ./ml-service/.env
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./ml-service/trained_models:/app/trained_models
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: neurosense-backend
+    restart: unless-stopped
+    depends_on:
+      - mongodb
+      - ml-service
+    env_file: ./backend/.env
+    ports:
+      - "5000:5000"
+
+volumes:
+  mongodb_data:
